@@ -1,0 +1,21 @@
+<div ng-controller="loginCtrl" class="col-lg-4 offset-lg-4">
+  
+    <h3>Elfelejtett jelszó visszaállítása</h3>
+  
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="passwdField" placeholder="" ng-model="userpass1">
+        <label for="passwdField">Új jelszó</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="confirmField" placeholder="" ng-model="userpass2">
+        <label for="confirmField">Új jelszó megerősítése</label>
+    </div>
+
+    <button class="mb-3 btn btn-primary" ng-click="restorepass()">Mentés</button>
+  
+    <div class="mb-3">
+      <a href="#!/login">Vissza a belépéshez...</a>
+    </div>
+  
+  </div>
