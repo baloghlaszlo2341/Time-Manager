@@ -1,0 +1,194 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Backend API",
+    "dateExported": "2023-10-11T07:46:19.949Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5a3948dd-ba37-4fd2-862f-62e217a64101",
+            "colId": "82012d47-ee4b-474d-bae8-e24f3e227f0d",
+            "containerId": "",
+            "name": "get API info",
+            "url": "http://localhost:5000",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2023-10-04T06:17:00.563Z",
+            "modified": "2023-10-04T06:17:19.203Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1c07945a-b2f4-4c98-a964-3023db565b25",
+            "colId": "82012d47-ee4b-474d-bae8-e24f3e227f0d",
+            "containerId": "",
+            "name": "get all records",
+            "url": "http://localhost:5000/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-09-27T09:30:14.619Z",
+            "modified": "2023-10-11T06:23:26.511Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f36ea573-dff7-4595-b02d-e9e7c0a64d7e",
+            "colId": "82012d47-ee4b-474d-bae8-e24f3e227f0d",
+            "containerId": "",
+            "name": "get one record by ID",
+            "url": "http://localhost:5000/users/2",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-09-27T09:32:21.695Z",
+            "modified": "2023-10-04T07:00:54.426Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1a42896d-4cc3-4987-8962-eacebe636d20",
+            "colId": "82012d47-ee4b-474d-bae8-e24f3e227f0d",
+            "containerId": "",
+            "name": "get one record by field",
+            "url": "http://localhost:5000/pricing/name/lk/pro",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-10-04T06:30:16.459Z",
+            "modified": "2023-10-04T07:09:36.951Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7ad8c13e-c827-4161-b6ba-d6e9dca6d03c",
+            "colId": "82012d47-ee4b-474d-bae8-e24f3e227f0d",
+            "containerId": "",
+            "name": "insert new record ",
+            "url": "http://localhost:5000/users",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-10-04T07:17:32.959Z",
+            "modified": "2023-10-04T07:37:42.084Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Karcsi"
+                    },
+                    {
+                        "name": "email",
+                        "value": "karoly@sdf.hu"
+                    },
+                    {
+                        "name": "passwd",
+                        "value": "123"
+                    },
+                    {
+                        "name": "age",
+                        "value": "65"
+                    },
+                    {
+                        "name": "address",
+                        "value": "Baja, Bácska tér 1.",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2ddb43ce-72ee-44f9-bbf6-0d6d076251f6",
+            "colId": "82012d47-ee4b-474d-bae8-e24f3e227f0d",
+            "containerId": "",
+            "name": "Delete all records",
+            "url": "http://localhost:5000/users",
+            "method": "DELETE",
+            "sortNum": 55000,
+            "created": "2023-10-11T06:20:29.374Z",
+            "modified": "2023-10-11T06:23:31.497Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8334d8f8-792b-4c9b-94e3-74bd5f714c18",
+            "colId": "82012d47-ee4b-474d-bae8-e24f3e227f0d",
+            "containerId": "",
+            "name": "Delete records by field",
+            "url": "http://localhost:5000/users/email/lk/gmail",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-10-11T06:24:41.900Z",
+            "modified": "2023-10-11T06:26:09.505Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1795528e-0444-40ed-bd87-8bca646238b6",
+            "colId": "82012d47-ee4b-474d-bae8-e24f3e227f0d",
+            "containerId": "",
+            "name": "Pacth records by field",
+            "url": "http://localhost:5000/users/ID/eq/3",
+            "method": "PATCH",
+            "sortNum": 100000,
+            "created": "2023-10-11T06:40:05.573Z",
+            "modified": "2023-10-11T06:42:01.456Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Béla"
+                    },
+                    {
+                        "name": "email",
+                        "value": "bela@gmail.com"
+                    },
+                    {
+                        "name": "passwd",
+                        "value": "123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "edc4ebcb-6b2f-452b-aba5-d48aad145d41",
+            "colId": "82012d47-ee4b-474d-bae8-e24f3e227f0d",
+            "containerId": "",
+            "name": "logincheck",
+            "url": "http://localhost:5000/logincheck",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-10-11T07:33:57.201Z",
+            "modified": "2023-10-11T07:35:57.610Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "bela@gmail.com"
+                    },
+                    {
+                        "name": "passwd",
+                        "value": "1234"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
