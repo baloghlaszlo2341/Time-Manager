@@ -1,0 +1,19 @@
+<div ng-controller="loginCtrl" class="col-lg-4 offset-lg-4" >
+  
+  <h3>Belépés</h3>
+
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="emailField" placeholder="name@example.com" ng-model="user.email">
+    <label for="emailField">E-mail cím</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="passwdField" placeholder="Password" ng-model="user.passwd">
+    <label for="passwdField">Jelszó</label>
+  </div>
+  <div class="mb-3">
+    <a href="#!/lostpass">Elfelejtettem a jelszavam...</a>
+  </div>
+  <button class="mb-3 btn btn-primary" ng-click="login()">Belépés</button>
+
+</div>
