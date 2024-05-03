@@ -1,6 +1,0 @@
-CREATE OR REPLACE VIEW statistics AS 
-SELECT
-    type as user,
-    count(*) as db
-FROM tasks
-GROUP BY user
